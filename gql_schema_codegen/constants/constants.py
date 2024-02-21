@@ -22,8 +22,8 @@ UNION_PATTERN = r"^\s*union\s+(?P<name>[\w_]+)\s=\s(?P<types>[\w\s,|]+)$"
 
 SCALAR_PATTERN = r"^\s*scalar\s+(?P<name>[\w_]+)$"
 
-DIRECTIVE_PATTERN = r"directive[\s\n\w:_|@()\[\]-]+\son\s[\w_]+"
+DIRECTIVE_PATTERN = r"directive[\s\n\w:_|@()\[\]-]+\son\s[\w_]+(\s+\|\s+[\w_]+)*"
 
-DIRECTIVE_USAGE_PATTERN = r"@[^(]+\(([^)])+\)"
+DIRECTIVE_USAGE_PATTERN = r"@\w+(\(([^)])+\))?"
 
 RESOLVER_TYPES = ["Query", "Mutation", "Subscription"]
