@@ -12,7 +12,7 @@ VALUE_TYPES: Dict[str, str] = {
     "DateTime": 'DateTime = field(metadata={"deserialize": lambda d: dateutil.parser.isoparse(d), "serialize": lambda v: v.isoformat()})',
 }
 
-BLOCK_PATTERN = r"(?P<type>type|input|enum|interface)\s(?P<name>[\w_]+)\s(implements\s(?P<implements>[\w_\s&]+)\s)?\{(?P<fields>[^}]+)\}\n?"
+BLOCK_PATTERN = r"(?P<type>type|input|enum|interface)\s(?P<name>[\w_]+)(\s+implements\s(?P<implements>[\w_\s&]+))\s*?\{(?P<fields>[^}]+)\}\n?"
 
 FIELD_PATTERN = (
     r"(?P<name>[\w_]+)(\((?P<params>[^)]+)\))?(\:\s(?P<value_type>([\w\[\]_!]+)))?.*\n"

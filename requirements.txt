@@ -1,5 +1,5 @@
 anyio==3.5.0
-ariadne==0.14.1
+ariadne==0.22
 attrs==21.4.0
 autopep8==1.6.0
 bleach==4.1.0
@@ -8,7 +8,7 @@ charset-normalizer==2.0.12
 colorama==0.4.4
 docutils==0.18.1
 gql-schema-codegen==1.0
-graphql-core==3.1.7
+graphql-core==3.2.0
 graphqlclient==0.2.4
 idna==3.3
 importlib-metadata==4.11.3
@@ -38,7 +38,6 @@ tomli==2.0.1
 tqdm==4.63.1
 twine==3.8.0
 typing==3.7.4.3
-typing-extensions==4.1.1
 urllib3==1.26.9
 webencodings==0.5.1
 zipp==3.7.0
